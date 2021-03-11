@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+                <title>Coding</title>
+                <meta charset="UTF-8">
+                <link rel="stylesheet" href="coding2style.css">
+    </head>
+
+    <body>
+        <script>
+            document.alinkColor = "grey"
+            document.linkColor = "black"
+            document.vlinkColor = "black"
+        </script>
+
+        <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night') {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.vlinkColor = 'white';
+            document.querySelector('#night_day').value = 'day'
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.vlinkColor = 'black';
+            document.querySelector('#night_day').value = 'night'
+        }
+        ">
+        
+        <h1><a href="index.html">Gun Woo Jin</a></h1>
+        <div id="grid">
+            <ul>
+                <h3 class="table">
+                    <li><a href="fashion2.html">Fashion</a></li>
+                    <li><a href="coding2.html"   style="text-decoration: underline;">Coding</a></li>
+                    <li><a href="stock2.html">Stock</a></li>
+                    <li><a href="board.html">Board</a></li>
+                </h3>
+            </ul>    
+            <ol>
+                <h3>
+                <li><a href="html2.html">HTML</a>
+                <br><span style="font-size: small;text-decoration: underline;">21.03.02-21.03.05</span></li>
+                <br><li><a href="css2.html">CSS</a>
+                <br><span style="font-size:small;text-decoration: underline;">21.03.06-21.03.08</span></li>
+                <br><li><a href="javascript2.html">JavaScript</a>
+                <br><span style="font-size:small;text-decoration: underline;">21.03.08-21.03.?</span></li>
+                <br><li><a href="python.html">Python</a>
+                <br><span style="font-size: small;text-decoration: underline;">21.03.01-21.?.?</span></li>
+                </h3>
+            </ol>
+            <div>   
+                <h2>
+                    Python
+                </h2>
+        
+                <p>    
+                    <a href="https://www.python.org/" target="_blank" style="color: cornflowerblue;">Python</a> is an interpreted, <strong>high-level and general-purpose <u>programming language.</u></strong> Python's design philosophy 
+                    emphasizes code readability with its notable use of significant indentation. Its language constructs and 
+                    object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.
+                </p>
+        
+                <p>
+                    Python is dynamically-typed and garbage-collected. It supports multiple programming paradigms, including structured 
+                    (particularly, procedural), object-oriented and functional programming. Python is often described as a "batteries included" 
+                    language due to its comprehensive standard library.
+                </p>
+            </div>
+
+
+        </div>
+
+
+
+<!--
+        <ol>
+        <h3>
+            <li><a href="fashion.html" target="_blank"><font color="red">Fashion</font></a></li>
+            <br><li><a href="coding.html" target="_blank"><font color="red">Coding</font></a></li>
+            <br><li><a href="stock.html" target="_blank"><font color="red">Stock</font></a></li>
+        </h3>
+        </ol>
+    -->
+
+    </body>
+
+
+
+
+
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+                <title>Coding</title>
+                <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <script>
+            document.alinkColor = "grey"
+            document.linkColor = "black"
+            document.vlinkColor = "black"
+        </script>
+
+        <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night') {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            document.vlinkColor = 'white';
+            document.querySelector('#night_day').value = 'day'
+        } else {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            document.vlinkColor = 'black';
+            document.querySelector('#night_day').value = 'night'
+        }
+        ">
+
+        <h1><a href="index.html">Gun Woo Jin</a></h1>
+        <div id="grid">
+            <ol>
+                <h3 class="table">
+                    <li><a href="fashion2.html"  style="text-decoration: underline;">Fashion</a></li>
+                    <li><a href="coding2.html">Coding</a></li>
+                    <li><a href="stock2.html">Stock</a></li>
+                    <li><a href="board.html">Board</a></li>
+                </h3>
+            </ol>    
+
+
+        </div>
+
+        <style>
+
+            iframe{
+                margin:40px;
+            }
+            #grid{
+                display: grid;
+                grid-template-columns: 192px 1fr;
+            }
+            a{
+                text-decoration: none;
+            }
+            h1{
+                font-size: 50px;
+                text-align: center;
+                margin-bottom:0px;
+                padding-bottom: 30px;
+                border-bottom:2px solid gray;
+            }
+            ol{
+                font-size: 15px;
+                border-right: 2px solid gray;
+                width:150px;
+                margin: 0px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+                list-style: none;
+            }
+            h3{
+                margin:0px;
+                line-height: 50px;
+            }
+            body{
+                margin:0px;
+            }
+            @media(max-width:950px){
+                #grid{
+                    display: block;
+                }
+                ol{
+                    display: contents;
+                }
+                h3{
+                    padding-bottom: 10px;
+                    border-bottom: 2px solid black;
+                }
+                iframe{
+                    width:600px;
+                    height: 336px;
+                    margin:0px;
+                    margin-top: 10px;
+                }
+            }
+            @media(max-width:620px){
+                iframe{
+                    width:500px;
+                    height: 280px;
+                }
+            }
+            @media(max-width:520px){
+                iframe{
+                    width:400px;
+                    height: 226px;
+                }
+            }
+            @media(max-width:350px){
+            h1{
+                font-size: 40px;
+                }
+            }
+            @media(max-width:270px){
+            h1{
+                font-size: 35px;
+                }
+            }
+            @media(max-width:250px){
+            h1{
+                display: none;
+                }
+            }
+    </style>
+
+<!--
+        <ol>
+        <h3>
+            <li><a href="fashion.html" target="_blank"><font color="red">Fashion</font></a></li>
+            <br><li><a href="coding.html" target="_blank"><font color="red">Coding</font></a></li>
+            <br><li><a href="stock.html" target="_blank"><font color="red">Stock</font></a></li>
+        </h3>
+        </ol>
+    -->
+
+    </body>
+
+
+
+
+
+</html>
