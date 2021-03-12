@@ -8,25 +8,11 @@
     </head>
 
     <body>
-        <script>
-            document.alinkColor = "grey"
-            document.linkColor = "black"
-            document.vlinkColor = "black"
+        <script src="nightdaymode.js">
         </script>
 
-        <input id="night_day" type="button" value="night" onclick="
-        if(document.querySelector('#night_day').value === 'night') {
-            document.querySelector('body').style.backgroundColor = 'black';
-            document.querySelector('body').style.color = 'white';
-            document.vlinkColor = 'white';
-            document.querySelector('#night_day').value = 'day'
-        } else {
-            document.querySelector('body').style.backgroundColor = 'white';
-            document.querySelector('body').style.color = 'black';
-            document.vlinkColor = 'black';
-            document.querySelector('#night_day').value = 'night'
-        }
-        ">
+        <input id= "night_day" type="button" value="night" onclick="
+        nightDayhandler(this)">
         
         <h1><a href="index.html">Gun Woo Jin</a></h1>
         <div id="grid">
@@ -86,6 +72,7 @@
         </ol>
     -->
 
+            <script src="livechat.js"type="text/javascript"></script>
     </body>
 
 
